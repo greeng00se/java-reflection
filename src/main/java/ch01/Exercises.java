@@ -1,9 +1,9 @@
-package exercises;
+package ch01;
 
 import java.util.Collection;
 import java.util.HashMap;
 
-public class Main {
+public class Exercises {
 
     public static void main(String[] args) throws ClassNotFoundException {
         Class<String> stringClass = String.class;
@@ -12,7 +12,7 @@ public class Main {
 
         Class<? extends HashMap> hashMapClass = mapObject.getClass();
 
-        Class<?> squareClass = Class.forName("exercises.Main$Square");
+        Class<?> squareClass = Class.forName("ch01.Exercises$Square");
 
         var circleObject = new Drawable() {
             @Override

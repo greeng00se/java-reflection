@@ -1,4 +1,4 @@
-package constructors;
+package ch02_constructors;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
