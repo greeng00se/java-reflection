@@ -1,34 +1,30 @@
 package ch08_config;
 
+import java.util.Arrays;
+
 public class UserInterfaceConfig {
     private String titleColor;
-    private String titleText;
-    private short titleFontSize;
-    private short footerFontSize;
+    private String[] titleFonts;
+    private short[] titleTextSizes;
 
     public String getTitleColor() {
         return titleColor;
     }
 
-    public String getFooterText() {
-        return titleText;
+    public String[] getTitleFonts() {
+        return titleFonts;
     }
 
-    public short getTitleFontSize() {
-        return titleFontSize;
-    }
-
-    public short getFooterFontSize() {
-        return footerFontSize;
+    public short[] getTitleTextSizes() {
+        return titleTextSizes;
     }
 
     @Override
     public String toString() {
         return "UserInterfaceConfig{" +
                 "titleColor='" + titleColor + '\'' +
-                ", footerText='" + titleText + '\'' +
-                ", titleFontSize=" + titleFontSize +
-                ", footerFontSize=" + footerFontSize +
+                ", titleFonts=" + Arrays.toString(titleFonts) +
+                ", titleTextSizes=" + Arrays.toString(titleTextSizes) +
                 '}';
     }
 }
